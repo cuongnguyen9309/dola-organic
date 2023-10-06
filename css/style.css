@@ -1,0 +1,85 @@
+@import url('../fonts/icomoon-v1.0/icomoon-style.css');
+
+.container-fluid {
+    max-width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header {
+    padding-top: 20px;
+}
+
+.logo {
+    width: 200px;
+}
+
+.header-search {
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 6px;
+    padding: 10px 5px;
+    font-size: 14px;
+}
+
+.header-search-input {
+    border: none;
+    outline: none;
+}
+
+.header-control .hotline {
+    font-weight: bold;
+    padding: 5px 20px;
+    border-radius: 5px;
+}
+
+.header-control .hotline .icon-phone-wrapper {
+    width: 24px;
+    animation: phoneShake 2s ease infinite;
+    margin-right: 5px;
+}
+
+.header-control-icon {
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+
+
+
+
+
+@keyframes phoneShake {
+    0% {
+        transform: rotate(0deg) scale(1) skew(1deg)
+    }
+
+    10% {
+        transform: rotate(-15deg) scale(1) skew(1deg)
+    }
+
+    20% {
+        transform: rotate(15deg) scale(1) skew(1deg)
+    }
+
+    30% {
+        transform: rotate(-15deg) scale(1) skew(1deg)
+    }
+
+    40% {
+        transform: rotate(15deg) scale(1) skew(1deg)
+    }
+
+    50% {
+        transform: rotate(0deg) scale(1) skew(1deg)
+    }
+
+    100% {
+        transform: rotate(0deg) scale(1) skew(1deg)
+    }
+}
