@@ -10,8 +10,78 @@
     background-color: #679210;
 }
 
+.header-search .icon-search {
+    background-color: #679210;
+    color: #fff;
+}
 
 .header-control-icon {
     background-color: #679210;
     color: #fff;
+}
+
+.header-control-icon .count {
+    background-color: red;
+}
+
+.header .menu-navbar {
+    background-color: #679210;
+    color: #fff;
+}
+
+.header .menu-navbar .special {
+    background-color: red;
+}
+
+.header .menu-navbar .nav-link:hover {
+    background-color: #76a713;
+}
+
+.primary-button {
+    color: #679210;
+    background-color: transparent;
+    border-color: #679210;
+}
+
+.primary-button:hover {
+    background-color: #679210;
+    color: white;
+}
+
+.section .title .text {
+    color: #679210;
+}
+
+.section .title .pagi-icons>li {
+    background-color: #76a713;
+    color: #fff;
+}
+
+.feature-list .feature-category {
+    border-color: gray;
+}
+
+.sale-list .sale-product .sale-amount {
+    background-color: red;
+    color: white;
+}
+
+.sale-list .sale-product .product-count .count-line {
+    background-color: #dfdfdf;
+}
+
+.sale-list .sale-product .sale-price {
+    color: #679210;
+}
+
+.sale-list .sale-product .sale-price .original-price {
+    color: gray;
+}
+
+.sale-list .sale-product:hover:before {
+    border-color: #679210
+}
+
+.sale-list .sale-product .actions-list .action-icon {
+    background-color: #679210;
 }

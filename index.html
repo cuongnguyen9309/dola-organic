@@ -5,8 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- CSS style sheet -->
+    <!-- Bootstrap css -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
         integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <!-- swiper js css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <!-- app css -->
     <link rel="stylesheet" href="./css/global.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/skin.css">
@@ -15,7 +19,7 @@
 
 <body>
     <header class="header">
-        <div class="container-fluid">
+        <div class="container">
             <div class="row header-wrapper align-items-center">
                 <div class="col-lg-2">
                     <div class="logo"><img src="./uploads/logo.png" alt=""></div>
@@ -23,6 +27,7 @@
                 <div class="col-lg-5">
                     <form action="" class="header-search">
                         <input type="text" class="header-search-input" placeholder="Nuoc ep">
+                        <i class="icon-search"></i>
                     </form>
                 </div>
                 <div class="col-lg-5">
@@ -30,19 +35,480 @@
                         <li class="hotline">
                             <span class="icon-phone-wrapper">
                                 <i class="icon-phone"></i>
-                            </span>
-
-                            Hotline: 1900 6750
+                            </span>1900 6750
                         </li>
-                        <li class="header-control-icon account"><i class="icon-account"></i></li>
-                        <li class="header-control-icon location"><i class="icon-location"></i></li>
-                        <li class="header-control-icon wishlist"><i class="icon-wishlist"></i></li>
-                        <li class="header-control-icon cart"><i class="icon-cart"></i></li>
+                        <li class="header-control-icon account"><i class="icon-account"></i>
+                            <span class="count">8</span>
+                        </li>
+                        <li class="header-control-icon location"><i class="icon-location"></i><span
+                                class="count">8</span></li>
+                        <li class="header-control-icon wishlist"><i class="icon-wishlist"></i><span
+                                class="count">8</span></li>
+                        <li class="header-control-icon cart"><i class="icon-cart"></i><span class="count">8</span></li>
                     </ul>
                 </div>
             </div>
+            <div class="menu-navbar">
+                <ul class="nav-links">
+                    <li class="nav-link">Trang chu</li>
+                    <li class="nav-link">Trang chu</li>
+                    <li class="nav-link">Trang chu</li>
+                    <li class="nav-link">Trang chu</li>
+                    <li class="nav-link">Trang chu</li>
+                    <li class="nav-link">Trang chu</li>
+                    <li class="nav-link special">Dat hang nhanh</li>
+                    <li class="nav-link">Trang chu</li>
+                </ul>
+            </div>
         </div>
     </header>
+    <div class="banner-1">
+        <img src="./uploads/slider_1.jpg" alt="">
+    </div>
+    <div class="section feature">
+        <div class="container">
+            <div class="title">
+                <div class="text">
+                    <h2>Danh mục nổi bật</h2>
+                    <div class="leaf-image-wrapper">
+                        <img src="./uploads/leaf.png" alt="">
+                    </div>
+                </div>
+                <ul class="pagi-icons">
+                    <li class="prev">
+                        <i class="icon-prev"></i>
+                    </li>
+                    <li class="next">
+                        <i class="icon-next"></i>
+                    </li>
+                </ul>
+            </div>
+            <hr>
+            <ul class="feature-list">
+                <li class="feature-category">
+                    <div class="feature-category-image-wrapper">
+                        <img src="./uploads/features/danhmuc_1.png" alt="">
+                    </div>
+                    <p class="category-name">Rau củ</p>
+                </li>
+                <li class="feature-category">
+                    <div class="feature-category-image-wrapper">
+                        <img src="./uploads/features/danhmuc_2.png" alt="">
+                    </div>
+                    <p class="category-name">Trái cây</p>
+                </li>
+                <li class="feature-category">
+                    <div class="feature-category-image-wrapper">
+                        <img src="./uploads/features/danhmuc_3.png" alt="">
+                    </div>
+                    <p class="category-name">Đồ khô</p>
+                </li>
+                <li class="feature-category">
+                    <div class="feature-category-image-wrapper">
+                        <img src="./uploads/features/danhmuc_4.png" alt="">
+                    </div>
+                    <p class="category-name">Nước ép</p>
+                </li>
+                <li class="feature-category">
+                    <div class="feature-category-image-wrapper">
+                        <img src="./uploads/features/danhmuc_6.png" alt="">
+                    </div>
+                    <p class="category-name">Salad</p>
+                </li>
+                <li class="feature-category">
+                    <div class="feature-category-image-wrapper">
+                        <img src="./uploads/features/danhmuc_8.png" alt="">
+                    </div>
+                    <p class="category-name">Thực phẩm khác</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section sale">
+        <div class="container">
+            <div class="title">
+                <div class="left">
+                    <div class="text">
+                        <h2>Khuyến mãi hấp dẫn</h2>
+                        <div class="leaf-image-wrapper">
+                            <img src="./uploads/leaf.png" alt="">
+                        </div>
+                    </div>
+                    <p>Chương trình khuyến mãi hấp dẫn đang chờ đợi bạn</p>
+                    <p>Chương trình đã kết thúc, hẹn gặp lại trong thời gian sớm nhất!</p>
+                </div>
+                <ul class="pagi-icons">
+                    <li class="prev sale-swiper-prev">
+                        <i class="icon-prev"></i>
+                    </li>
+                    <li class="next sale-swiper-next">
+                        <i class="icon-next"></i>
+                    </li>
+                </ul>
+            </div>
+            <hr>
+            <div class="sale-swiper">
+                <ul class="sale-list swiper-wrapper">
+                    <li class="sale-product swiper-slide">
+                        <span class="sale-amount">Giam 11%</span>
+                        <div class="actions-list">
+                            <div class="action-icon detail"><i class="icon-detail"></i></div>
+                            <div class="action-icon search"><i class="icon-search"></i></div>
+                            <div class="action-icon wish-list"><i class="icon-wishlist-fill"></i></div>
+                        </div>
+                        <div class="sale-product-image-wrapper">
+                            <img src="./uploads/sale/kim-chi-cai-thao-cat-lat-bibigo-ong-kims-goi-100g-202002031131554036.png"
+                                alt="">
+                        </div>
+                        <p class="product-name">Kim chi cải thảo cắt lát Bibigo Ông Kim's gói</p>
+                        <p class="sale-price">12.000₫<span class="original-price">13.500₫</span></span></p>
+                        <div class="product-count">
+                            <div class="count-line">
+                                <span class="count-percent"></span>
+                            </div>
+                            <p class="text">Đã bán 148</p>
+                        </div>
+                    </li>
+                    <li class="sale-product swiper-slide">
+                        <span class="sale-amount">Giam 11%</span>
+                        <div class="actions-list">
+                            <div class="action-icon detail"><i class="icon-detail"></i></div>
+                            <div class="action-icon search"><i class="icon-search"></i></div>
+                            <div class="action-icon wish-list"><i class="icon-wishlist-fill"></i></div>
+                        </div>
+                        <div class="sale-product-image-wrapper">
+                            <img src="./uploads/sale/kim-chi-cai-thao-cat-lat-bibigo-ong-kims-goi-100g-202002031131554036.png"
+                                alt="">
+                        </div>
+                        <p class="product-name">Kim chi cải thảo cắt lát Bibigo Ông Kim's gói</p>
+                        <p class="sale-price">12.000₫<span class="original-price">13.500₫</span></span></p>
+                        <div class="product-count">
+                            <div class="count-line">
+                                <span class="count-percent"></span>
+                            </div>
+                            <p class="text">Đã bán 148</p>
+                        </div>
+                    </li>
+                    <li class="sale-product swiper-slide">
+                        <span class="sale-amount">Giam 11%</span>
+                        <div class="actions-list">
+                            <div class="action-icon detail"><i class="icon-detail"></i></div>
+                            <div class="action-icon search"><i class="icon-search"></i></div>
+                            <div class="action-icon wish-list"><i class="icon-wishlist-fill"></i></div>
+                        </div>
+                        <div class="sale-product-image-wrapper">
+                            <img src="./uploads/sale/kim-chi-cai-thao-cat-lat-bibigo-ong-kims-goi-100g-202002031131554036.png"
+                                alt="">
+                        </div>
+                        <p class="product-name">Kim chi cải thảo cắt lát Bibigo Ông Kim's gói</p>
+                        <p class="sale-price">12.000₫<span class="original-price">13.500₫</span></span></p>
+                        <div class="product-count">
+                            <div class="count-line">
+                                <span class="count-percent"></span>
+                            </div>
+                            <p class="text">Đã bán 148</p>
+                        </div>
+                    </li>
+                    <li class="sale-product swiper-slide">
+                        <span class="sale-amount">Giam 11%</span>
+                        <div class="actions-list">
+                            <div class="action-icon detail"><i class="icon-detail"></i></div>
+                            <div class="action-icon search"><i class="icon-search"></i></div>
+                            <div class="action-icon wish-list"><i class="icon-wishlist-fill"></i></div>
+                        </div>
+                        <div class="sale-product-image-wrapper">
+                            <img src="./uploads/sale/kim-chi-cai-thao-cat-lat-bibigo-ong-kims-goi-100g-202002031131554036.png"
+                                alt="">
+                        </div>
+                        <p class="product-name">Kim chi cải thảo cắt lát Bibigo Ông Kim's gói</p>
+                        <p class="sale-price">12.000₫<span class="original-price">13.500₫</span></span></p>
+                        <div class="product-count">
+                            <div class="count-line">
+                                <span class="count-percent"></span>
+                            </div>
+                            <p class="text">Đã bán 148</p>
+                        </div>
+                    </li>
+                    <li class="sale-product swiper-slide">
+                        <span class="sale-amount">Giam 11%</span>
+                        <div class="actions-list">
+                            <div class="action-icon detail"><i class="icon-detail"></i></div>
+                            <div class="action-icon search"><i class="icon-search"></i></div>
+                            <div class="action-icon wish-list"><i class="icon-wishlist-fill"></i></div>
+                        </div>
+                        <div class="sale-product-image-wrapper">
+                            <img src="./uploads/sale/kim-chi-cai-thao-cat-lat-bibigo-ong-kims-goi-100g-202002031131554036.png"
+                                alt="">
+                        </div>
+                        <p class="product-name">Kim chi cải thảo cắt lát Bibigo Ông Kim's gói</p>
+                        <p class="sale-price">12.000₫<span class="original-price">13.500₫</span></span></p>
+                        <div class="product-count">
+                            <div class="count-line">
+                                <span class="count-percent"></span>
+                            </div>
+                            <p class="text">Đã bán 148</p>
+                        </div>
+                    </li>
+                    <li class="sale-product swiper-slide">
+                        <span class="sale-amount">Giam 11%</span>
+                        <div class="actions-list">
+                            <div class="action-icon detail"><i class="icon-detail"></i></div>
+                            <div class="action-icon search"><i class="icon-search"></i></div>
+                            <div class="action-icon wish-list"><i class="icon-wishlist-fill"></i></div>
+                        </div>
+                        <div class="sale-product-image-wrapper">
+                            <img src="./uploads/sale/kim-chi-cai-thao-cat-lat-bibigo-ong-kims-goi-100g-202002031131554036.png"
+                                alt="">
+                        </div>
+                        <p class="product-name">Kim chi cải thảo cắt lát Bibigo Ông Kim's gói</p>
+                        <p class="sale-price">12.000₫<span class="original-price">13.500₫</span></span></p>
+                        <div class="product-count">
+                            <div class="count-line">
+                                <span class="count-percent"></span>
+                            </div>
+                            <p class="text">Đã bán 148</p>
+                        </div>
+                    </li>
+                    <li class="sale-product swiper-slide">
+                        <span class="sale-amount">Giam 11%</span>
+                        <div class="actions-list">
+                            <div class="action-icon detail"><i class="icon-detail"></i></div>
+                            <div class="action-icon search"><i class="icon-search"></i></div>
+                            <div class="action-icon wish-list"><i class="icon-wishlist-fill"></i></div>
+                        </div>
+                        <div class="sale-product-image-wrapper">
+                            <img src="./uploads/sale/kim-chi-cai-thao-cat-lat-bibigo-ong-kims-goi-100g-202002031131554036.png"
+                                alt="">
+                        </div>
+                        <p class="product-name">Kim chi cải thảo cắt lát Bibigo Ông Kim's gói</p>
+                        <p class="sale-price">12.000₫<span class="original-price">13.500₫</span></span></p>
+                        <div class="product-count">
+                            <div class="count-line">
+                                <span class="count-percent"></span>
+                            </div>
+                            <p class="text">Đã bán 148</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="see-all">
+                <button class="primary-button see-all-btn">
+                    Xem tất cả
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="section special-service">
+        <div class="container">
+            <div class="title">
+                <div class="left">
+                    <div class="text">
+                        <h2>Dịch vụ đặc biệt của chúng tôi</h2>
+                        <div class="leaf-image-wrapper">
+                            <img src="./uploads/leaf.png" alt="">
+                        </div>
+                    </div>
+                    <p>Những dịch vụ tốt nhất dành cho khách hàng của chúng tôi</p>
+                </div>
+            </div>
+            <hr>
+            <ul class="services-list">
+                <li class="service-item">
+                    <div class="service-image-wrapper">
+                        <img src="./uploads/special_service/dichvu_1.png" alt="">
+                    </div>
+                    <h3 class="service-name">Rau hữu cơ tươi</h3>
+                    <hr>
+                    <p class="service-description">Được trồng theo phương pháp hiện đại nhất, đạt tiêu chuẩn quốc tế, vô
+                        cùng an toàn khi sử dụng.</p>
+                    <div class="detail">
+                        <button class="primary-button detail-btn">Tìm hiểu thêm</button>
+                    </div>
+                </li>
+                <li class="service-item">
+                    <div class="service-image-wrapper">
+                        <img src="./uploads/special_service/dichvu_2.png" alt="">
+                    </div>
+                    <h3 class="service-name">Giao hàng nhanh chóng</h3>
+                    <hr>
+                    <p class="service-description">Giao hàng trong thời gian nhanh nhất để đảm bảo chất lượng tốt nhất
+                        cho những sản phẩm bạn đã đặt.</p>
+                    <div class="detail">
+                        <button class="primary-button detail-btn">Tìm hiểu thêm</button>
+                    </div>
+                </li>
+                <li class="service-item">
+                    <div class="service-image-wrapper">
+                        <img src="./uploads/special_service/dichvu_3.png" alt="">
+                    </div>
+                    <h3 class="service-name">Thanh toán dễ dàng</h3>
+                    <hr>
+                    <p class="service-description">Nhiều hình thức thanh toán làm cho việc đặt hàng của bạn và shop trở
+                        nên dễ dàng và tiện lợi hơn rất nhiều.</p>
+                    <div class="detail">
+                        <button class="primary-button detail-btn">Tìm hiểu thêm</button>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section vegetable">
+        <div class="container">
+            <div class="products">
+                <div class="side-banner">
+                    <img src="./uploads/image_product1.png" alt="">
+                </div>
+                <div class="content">
+                    <div class="title">
+                        <div class="left">
+                            <div class="text">
+                                <h2>Khuyến mãi hấp dẫn</h2>
+                                <div class="leaf-image-wrapper">
+                                    <img src="./uploads/leaf.png" alt="">
+                                </div>
+                            </div>
+                            <p>Chương trình khuyến mãi hấp dẫn đang chờ đợi bạn</p>
+                            <p>Chương trình đã kết thúc, hẹn gặp lại trong thời gian sớm nhất!</p>
+                        </div>
+                        <ul class="pagi-icons">
+                            <li class="prev vegetable-swiper-prev">
+                                <i class="icon-prev"></i>
+                            </li>
+                            <li class="next vegetable-swiper-next">
+                                <i class="icon-next"></i>
+                            </li>
+                        </ul>
+                    </div>
+                    <hr>
+                    <div class="product-swiper">
+                        <ul class="product-list swiper-wrapper">
+                            <li class="product swiper-slide">
+                                <span class="sale-amount">Giam 11%</span>
+                                <div class="actions-list">
+                                    <div class="action-icon detail"><i class="icon-detail"></i></div>
+                                    <div class="action-icon search"><i class="icon-search"></i></div>
+                                    <div class="action-icon wish-list"><i class="icon-wishlist-fill"></i></div>
+                                </div>
+                                <div class="sale-product-image-wrapper">
+                                    <img src="./uploads/sale/kim-chi-cai-thao-cat-lat-bibigo-ong-kims-goi-100g-202002031131554036.png"
+                                        alt="">
+                                </div>
+                                <p class="product-name">Kim chi cải thảo cắt lát Bibigo Ông Kim's gói</p>
+                                <p class="sale-price">12.000₫<span class="original-price">13.500₫</span></span></p>
+                                <div class="product-count">
+                                    <div class="count-line">
+                                        <span class="count-percent"></span>
+                                    </div>
+                                    <p class="text">Đã bán 148</p>
+                                </div>
+                            </li>
+                            <li class="product swiper-slide">
+                                <span class="sale-amount">Giam 22%</span>
+                                <div class="actions-list">
+                                    <div class="action-icon detail"><i class="icon-detail"></i></div>
+                                    <div class="action-icon search"><i class="icon-search"></i></div>
+                                    <div class="action-icon wish-list"><i class="icon-wishlist-fill"></i></div>
+                                </div>
+                                <div class="sale-product-image-wrapper">
+                                    <img src="./uploads/sale/kim-chi-cai-thao-cat-lat-bibigo-ong-kims-goi-100g-202002031131554036.png"
+                                        alt="">
+                                </div>
+                                <p class="product-name">Kim chi cải thảo cắt lát Bibigo Ông Kim's gói</p>
+                                <p class="sale-price">12.000₫<span class="original-price">13.500₫</span></span></p>
+                                <div class="product-count">
+                                    <div class="count-line">
+                                        <span class="count-percent"></span>
+                                    </div>
+                                    <p class="text">Đã bán 148</p>
+                                </div>
+                            </li>
+                            <li class="product swiper-slide">
+                                <span class="sale-amount">Giam 11%</span>
+                                <div class="actions-list">
+                                    <div class="action-icon detail"><i class="icon-detail"></i></div>
+                                    <div class="action-icon search"><i class="icon-search"></i></div>
+                                    <div class="action-icon wish-list"><i class="icon-wishlist-fill"></i></div>
+                                </div>
+                                <div class="sale-product-image-wrapper">
+                                    <img src="./uploads/sale/kim-chi-cai-thao-cat-lat-bibigo-ong-kims-goi-100g-202002031131554036.png"
+                                        alt="">
+                                </div>
+                                <p class="product-name">Kim chi cải thảo cắt lát Bibigo Ông Kim's gói</p>
+                                <p class="sale-price">12.000₫<span class="original-price">13.500₫</span></span></p>
+                                <div class="product-count">
+                                    <div class="count-line">
+                                        <span class="count-percent"></span>
+                                    </div>
+                                    <p class="text">Đã bán 148</p>
+                                </div>
+                            </li>
+                            <li class="product swiper-slide">
+                                <span class="sale-amount">Giam 11%</span>
+                                <div class="actions-list">
+                                    <div class="action-icon detail"><i class="icon-detail"></i></div>
+                                    <div class="action-icon search"><i class="icon-search"></i></div>
+                                    <div class="action-icon wish-list"><i class="icon-wishlist-fill"></i></div>
+                                </div>
+                                <div class="sale-product-image-wrapper">
+                                    <img src="./uploads/sale/kim-chi-cai-thao-cat-lat-bibigo-ong-kims-goi-100g-202002031131554036.png"
+                                        alt="">
+                                </div>
+                                <p class="product-name">Kim chi cải thảo cắt lát Bibigo Ông Kim's gói</p>
+                                <p class="sale-price">12.000₫<span class="original-price">13.500₫</span></span></p>
+                                <div class="product-count">
+                                    <div class="count-line">
+                                        <span class="count-percent"></span>
+                                    </div>
+                                    <p class="text">Đã bán 148</p>
+                                </div>
+                            </li>
+
+                            <li class="product swiper-slide">
+                                <span class="sale-amount">Giam 11%</span>
+                                <div class="actions-list">
+                                    <div class="action-icon detail"><i class="icon-detail"></i></div>
+                                    <div class="action-icon search"><i class="icon-search"></i></div>
+                                    <div class="action-icon wish-list"><i class="icon-wishlist-fill"></i></div>
+                                </div>
+                                <div class="sale-product-image-wrapper">
+                                    <img src="./uploads/sale/kim-chi-cai-thao-cat-lat-bibigo-ong-kims-goi-100g-202002031131554036.png"
+                                        alt="">
+                                </div>
+                                <p class="product-name">Kim chi cải thảo cắt lát Bibigo Ông Kim's gói</p>
+                                <p class="sale-price">12.000₫<span class="original-price">13.500₫</span></span></p>
+                                <div class="product-count">
+                                    <div class="count-line">
+                                        <span class="count-percent"></span>
+                                    </div>
+                                    <p class="text">Đã bán 148</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="see-all">
+                        <button class="primary-button see-all-btn">
+                            Xem tất cả
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
     <!-- jquery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
         integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
@@ -57,6 +523,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"
         integrity="sha512-rstIgDs0xPgmG6RX1Aba4KV5cWJbAMcvRCVmglpam9SoHZiUCyQVDdH2LPlxoHtrv17XWblE/V/PP+Tr04hbtA=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- swiper js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <!-- app js -->
     <script src="./js/app.js">
         // App.js
