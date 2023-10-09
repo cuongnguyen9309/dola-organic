@@ -37,6 +37,10 @@
     background-color: #76a713;
 }
 
+.title-hr {
+    background-color: #679210;
+}
+
 .primary-button {
     color: #679210;
     background-color: transparent;
@@ -48,11 +52,11 @@
     color: white;
 }
 
-.section .title .text {
+.title .text {
     color: #679210;
 }
 
-.section .title .pagi-icons>li {
+.title .pagi-icons>li {
     background-color: #76a713;
     color: #fff;
 }
@@ -61,27 +65,72 @@
     border-color: gray;
 }
 
-.sale-list .sale-product .sale-amount {
+.card-product .sale-amount {
     background-color: red;
     color: white;
 }
 
-.sale-list .sale-product .product-count .count-line {
+.card-product .product-count .count-line {
     background-color: #dfdfdf;
 }
 
-.sale-list .sale-product .sale-price {
+.card-product .sale-price {
     color: #679210;
 }
 
-.sale-list .sale-product .sale-price .original-price {
+.card-product .sale-price .original-price {
     color: gray;
 }
 
-.sale-list .sale-product:hover:before {
+.card-product:hover:before {
     border-color: #679210
 }
 
-.sale-list .sale-product .actions-list .action-icon {
+.card-product .actions-list .action-icon {
     background-color: #679210;
+}
+
+.news .news-item .read-more-btn {
+    background-color: transparent;
+    border-color: white;
+    color: white;
+}
+
+.news .news-item .date {
+    background-color: #679210;
+    color: white;
+}
+
+.footer {
+    background-color: #efffcf;
+}
+
+.footer .thanh-toan {
+    color: #679210;
+}
+
+.footer>hr {
+    background-color: #679210;
+}
+
+.footer .title {
+    color: #679210;
+}
+
+.footer .strong {
+    color: #679210;
+}
+
+.footer .instagram .instagram-link {
+    background: rgba(118, 167, 19, 0.3);
+}
+
+.footer .instagram .instagram-link {
+    color: white;
+}
+
+.notice-icon {
+    background-color: #679210;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    color: white;
 }
